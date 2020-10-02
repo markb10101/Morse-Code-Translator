@@ -1,0 +1,37 @@
+* {
+    margin: 1vw;
+    padding: 0;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        section {
+            width: 50%;
+
+            display: flex;
+            justify-content: flex-end;
+
+            label {
+
+            }
+
+            textarea{
+
+
+            }
+        }
+
+        button{
+            width: 20%
+        }
+
+    }
+}
+

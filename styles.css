@@ -1,0 +1,21 @@
+* {
+  margin: 1vw;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+#container form {
+  display: flex;
+  flex-direction: column;
+}
+#container form section {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+#container form button {
+  width: 20%;
+}
