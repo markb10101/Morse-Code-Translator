@@ -95,13 +95,11 @@ function translateMorseToEnglish(stringToConvert) {
 
     let outputString = "";
 
-
-    // make array from input by splitting at "   " (3 spaces)
-    let arrayToConvert = stringToConvert.split("   ");
-
+    // make array from input by splitting at spaces
+    let arrayToConvert = stringToConvert.split(" ");
 
     // loop through input array 
-    arrayToConvert.forEach((sequence, position) => {
+    arrayToConvert.forEach((sequence) => {
 
         // compare entries against morse code array
         morseCodeArr.forEach((char, index) => {
