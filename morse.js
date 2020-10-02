@@ -11,6 +11,16 @@ let englishLettersArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", 
 let morseCodeArr = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."];
 
 
+let englishNumbersArr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+let morseCodeNumbersArr = ["-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----."];
+
+englishLettersArr = englishLettersArr.concat(englishNumbersArr);
+morseCodeArr = morseCodeArr.concat(morseCodeNumbersArr);
+
+
+console.log(englishLettersArr);
+
+
 //let MorseExp = 0;
 
 // add onclick to translate button
@@ -22,7 +32,7 @@ translateButton.addEventListener("click", checkLanguage);
 function checkLanguage() {
 
     // reg exp to look for letters
-    let lettersExp = /[a-zA-Z]/g;
+    let lettersExp = /[a-zA-Z0-9]/g;
 
     // get contents of input textarea
     let textInput = document.getElementById("input").value;
@@ -71,5 +81,11 @@ function translateEnglishToMorse(stringToConvert) {
 
     // write the translated string to the output area
     document.getElementById("output").value = outputString;
+
+}
+
+function translateMorseToEnglish(stringToConvert){
+
+
 
 }
