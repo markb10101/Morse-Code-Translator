@@ -1,5 +1,5 @@
 * {
-  margin: 1vw;
+  margin: 0.25rem;
   padding: 0;
 }
 
@@ -8,10 +8,12 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+  border: 8px solid #6b6;
+  border-radius: 5px;
 }
 #container h1 {
   text-align: center;
-  font-size: 2vw;
+  font-size: 1rem;
 }
 #container form {
   display: flex;
@@ -23,5 +25,5 @@
   justify-content: flex-end;
 }
 #container form button {
-  width: 20%;
+  width: 8rem;
 }

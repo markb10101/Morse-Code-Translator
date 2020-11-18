@@ -65,7 +65,7 @@ function translateEnglishToMorse(stringToConvert) {
 
     // make array from input
     let arrayToConvert = stringToConvert.split("");
-
+   
     // loop through input array 
     arrayToConvert.forEach((sequence,position) => {
 
@@ -80,7 +80,7 @@ function translateEnglishToMorse(stringToConvert) {
                 // ie. input was longer than 1 letter and we are not at the end
                 if (arrayToConvert.length > 1 && position < arrayToConvert.length - 1) {
                     // add a "/" to the end of the string
-                    outputString += " / ";
+                    outputString += "/";
                 }
             }
 
@@ -99,8 +99,13 @@ function translateMorseToEnglish(stringToConvert) {
 
     let outputString = "";
 
-    // make array from input by splitting at spaces
+
+    // make array from input
     let arrayToConvert = stringToConvert.split(" ");
+
+
+    // make array from input by splitting at spaces
+    //let arrayToConvert = stringToConvert.split(" ");
 
     // loop through input array 
     arrayToConvert.forEach((sequence) => {
